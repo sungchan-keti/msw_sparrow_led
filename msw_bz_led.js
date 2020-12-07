@@ -49,12 +49,12 @@ try {
 }
 catch (e) {
     add_lib = {
-        name: 'msw_bz_led',
+        name: 'lib_bz_led',
         target: 'armv6',
-        description: "[name] [gpio_id]",
-        scripts: './lib_bz_led 1',
-		data: ['LED'],
-        control: ['Control_ONOFF']
+        description: "[name]",
+        scripts: './lib_bz_beacon',
+		data: ['State'],
+        control: ['Control_Green', 'Control_Red', 'Control_Alarm']
     };
     config.lib.push(add_lib);
 }

@@ -1,13 +1,13 @@
 {
 	"name"			: "lib_bz_led",
 	"target"		: "armv6",
-	"description"	: "[name] [config_file.json]",
-	"scripts"		: "./lib_bz_beacon lib_bz_led.json",		// "./lib_bz_led lib_bz_led.json",
+	"description"	: "[name]",
+	"scripts"		: "./lib_bz_beacon",						// "./lib_bz_led",
 	"data"			:
 					[
 					  "State"									// {"LED_Green": "ON/OFF", "LED_Red": "ON/OFF", "Alarm": "ON/OFF"}
 					],						
-	"control"		: 
+	"control"		:
 					[
 					  "Control_Green",							// Control_Green	= ON / OFF
 					  "Control_Red", 							// Control_Red		= ON / OFF 

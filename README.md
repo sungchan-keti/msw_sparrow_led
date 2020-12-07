@@ -1,13 +1,12 @@
-# lib_sparrow_beacon
+# msw_bz_led
 
--- Push
-git commit -m "update"
-git branch -M main
-git remote add origin https://github.com/sylee-bzd/lib_sparrow_beacon.git
-git push -u origin main
-
--- Pull
-git remote add origin https://github.com/sylee-bzd/lib_sparrow_beacon.git
-git branch -M main
-git push -u origin main
-
+## Install dependencies
+### MQTT-broker
+```
+$ wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+$ sudo apt-key add mosquitto-repo.gpg.key
+$ cd /etc/apt/sources.list.d/
+$ sudo wget http://repo.mosquitto.org/debian/mosquitto-buster.list 
+$ sudo apt-get update
+$ sudo apt-get install -y mosquitto
+```
